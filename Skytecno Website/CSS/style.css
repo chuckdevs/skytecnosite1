@@ -312,7 +312,6 @@ nav {
   align-items: center;
   width: 45%;
   color: #ffffff;
-  
 }
 
 /*-------------ABOUT---------FINAL----------*/
@@ -539,7 +538,7 @@ footer {
     /*font-size: 10px;*/
   }
   .logo-buy {
-    width: 492px;
+    width: 95%;
   }
   #projects .row {
     flex-flow: column;
@@ -598,7 +597,6 @@ footer {
     overflow: hidden;
   }
   #hero h1 {
-
     padding: 0 3rem;
   }
 }
