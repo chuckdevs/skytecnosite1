@@ -8,5 +8,5 @@ O site conta com um menu hamburguer responsivo, feito com Javascript, e também 
 
 Espero que gostem do meu trabalho e qualquer feedback ou sugestão é sempre bem-vindo!
 
-[Clique aqui para visitar o preview do site](https://comforting-alpaca-0a20a6.netlify.app/index.html)
+[Clique aqui para visitar o preview do site](https://comforting-alpaca-0a20a6.netlify.app)
 
