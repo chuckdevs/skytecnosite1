@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bem-vindo ao Grupo Sky Tecno! Somos uma equipe de eletricistas dedicados a fornecer serviços elétricos de alta qualidade para nossos clientes. Com anos de experiência no ramo, nosso objetivo é garantir a segurança e a eficiência dos sistemas elétricos em residências, empresas e indústrias.
+Nosso compromisso com a qualidade começa com nossa equipe de eletricistas altamente treinados e qualificados, que são especialistas em diagnóstico, reparo e manutenção de sistemas elétricos complexos. Além disso, utilizamos apenas equipamentos e materiais de alta qualidade em todos os nossos projetos.
+">
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="/CSS/media.css">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/variables.css">
+    <!--LINK CSS-->
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--GOOGLE FONTS-->
+    <!--ANIMATE SCROLL-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--ANIMATE AOS SCROLL-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Grupo SkyTecno</title>
+</head>
+
+<body>
+    <div id="top" class="social-bar">
+        <a href="#" class="email">
+            <i class="icon-email"><svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0.234375V2.97917L9.58837 8.46875L19.1767 2.97917V0.234375H0ZM0 5.72396V16.7031H19.1767V5.72396L9.58837 11.2135L0 5.72396Z"
+                        fill="#022641" />
+                </svg>
+            </i>
+            <span>exemple@skytecno.com.br</span>
+        </a>
+        <div class="social-media">
+            <a href="#" class="facebook">
+                <i class="facebook-icon">
+                    <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.65 1.08789H10.2C8.67499 1.08789 7.21242 1.71144 6.13418 2.82137C5.0558 3.93129 4.45 5.43668 4.45 7.00635V10.5574H1V15.2922H4.45V24.7617H9.05V15.2922H12.5L13.65 10.5574H9.05V7.00635C9.05 6.69241 9.17121 6.39134 9.38684 6.16935C9.60246 5.94737 9.89502 5.82266 10.2 5.82266H13.65V1.08789Z"
+                            stroke="#022641" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </i>
+            </a>
+
+            <a href="#" class="instagram">
+                <i class="instagram-icon">
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0001 16.0434C13.4547 16.0434 15.4446 13.9952 15.4446 11.4688C15.4446 8.94224 13.4547 6.8941 11.0001 6.8941C8.54551 6.8941 6.55566 8.94224 6.55566 11.4688C6.55566 13.9952 8.54551 16.0434 11.0001 16.0434Z"
+                            stroke="#022641" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M1 16.0434V6.8941C1 3.73596 3.48731 1.17578 6.55556 1.17578H15.4444C18.5127 1.17578 21 3.73596 21 6.8941V16.0434C21 19.2015 18.5127 21.7617 15.4444 21.7617H6.55556C3.48731 21.7617 1 19.2015 1 16.0434Z"
+                            stroke="#022641" stroke-width="2" />
+                        <path d="M17.1113 5.19006L17.1228 5.17731" stroke="#022641" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </i>
+            </a>
+        </div>
+        <a href="#" class="tel">
+            <i class="icon-tel">
+                <svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.616729 0.0878906C0.259675 0.0878906 0 0.355174 0 0.722688V26.2148C0 26.5823 0.259675 26.8496 0.616729 26.8496H15.6454C16.0025 26.8496 16.2622 26.5823 16.2622 26.2148V0.722688C16.2622 0.355174 16.0025 0.0878906 15.6454 0.0878906L0.616729 0.0878906ZM3.24594 3.42893H12.9838V20.1341H3.24594V3.42893ZM8.11486 21.8046C9.02372 21.8046 9.73783 22.5397 9.73783 23.4752C9.73783 24.4107 9.02372 25.1457 8.11486 25.1457C7.20599 25.1457 6.49189 24.4107 6.49189 23.4752C6.49189 22.5397 7.20599 21.8046 8.11486 21.8046Z"
+                        fill="#022641" />
+                </svg>
+
+            </i>
+            <span>(11) 9XXXX-XXXX</span>
+        </a>
+    </div>
+    <header>
+
+        <nav>
+
+            <a href="#"><img src="/IMAGES/SKYTECNO-logo-header.png" alt="Logo Grupo SKYTECNO" class="logo"></a>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <ul class="menu">
+                <li class="item-menu"><a href="index.html">INÍCIO</a></li>
+                <li class="item-menu"><a href="#services">SERVIÇOS</a></li>
+                <li class="item-menu"><a href="#projects">PROJETOS</a></li>
+                <li class="item-menu"><a href="#about">SOBRE</a></li>
+            </ul>
+
+            <a href="#" class="btn-contact">
+                <img src="/IMAGES/whatsapp.svg" alt="">
+                <span>SOLICITAR ORÇAMENTO</span></a>
+
+
+        </nav>
+
+    </header>
+    <section id="hero">
+        <div class="hero-container">
+            <div class="text-content" data-aos="fade-up">
+                <h1>
+                    Grupo Sky Tecno, a sua solução em <br> eletricidade!
+                </h1>
+                <p>
+                    Nós somos uma equipe de eletricistas experientes e comprometidos com a qualidade dos nossos
+                    serviços.
+                    Atendemos clientes
+                    residenciais, comerciais e industriais, garantindo preços justos e um atendimento personalizado.
+                    <br> <br>
+
+                    Entre em contato conosco hoje mesmo e descubra como podemos ajudá-lo a ter a energia elétrica de
+                    qualidade
+                    que você
+                    precisa e merece.
+                </p>
+            </div>
+            <a href="#services" class="veja-mais" data-aos="fade-down"><i>
+                    <svg width="78" height="113" viewBox="0 0 78 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63 48.5742L42 70.1895L21 48.5742" stroke="white" stroke-width="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M63 85.6289L42 107.244L21 85.6289" stroke="white" stroke-width="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M3.16291 3.81818L5.62385 11.554H5.71831L8.18422 3.81818H10.5706L7.06064 14H4.28649L0.771573 3.81818H3.16291ZM11.7961 14V3.81818H18.6569V5.59304H13.9488V8.01918H18.3039V9.79403H13.9488V12.2251H18.6768V14H11.7961ZM24.445 3.81818H26.5729V10.9176C26.5729 11.5739 26.4254 12.1439 26.1304 12.6278C25.8387 13.1117 25.4327 13.4846 24.9124 13.7464C24.392 14.0083 23.7871 14.1392 23.0977 14.1392C22.4846 14.1392 21.9278 14.0315 21.4273 13.8161C20.9301 13.5973 20.5357 13.2659 20.2441 12.8217C19.9524 12.3743 19.8082 11.8125 19.8115 11.1364H21.9543C21.9609 11.4048 22.0156 11.6352 22.1183 11.8274C22.2244 12.0163 22.3686 12.1622 22.5509 12.2649C22.7365 12.3643 22.9552 12.4141 23.2071 12.4141C23.4723 12.4141 23.696 12.3577 23.8783 12.245C24.0639 12.129 24.2048 11.96 24.3009 11.7379C24.397 11.5159 24.445 11.2424 24.445 10.9176V3.81818ZM30.1077 14H27.8009L31.3158 3.81818H34.0899L37.5999 14H35.2931L32.7426 6.14489H32.6631L30.1077 14ZM29.9635 9.99787H35.4124V11.6783H29.9635V9.99787ZM42.0656 3.81818H44.7204L47.5244 10.6591H47.6437L50.4477 3.81818H53.1025V14H51.0145V7.37287H50.93L48.295 13.9503H46.8731L44.2382 7.34801H44.1537V14H42.0656V3.81818ZM56.6311 14H54.3243L57.8392 3.81818H60.6134L64.1233 14H61.8165L59.2661 6.14489H59.1865L56.6311 14ZM56.4869 9.99787H61.9358V11.6783H56.4869V9.99787ZM67.5015 3.81818V14H65.3488V3.81818H67.5015ZM74.7961 6.74645C74.7563 6.34541 74.5856 6.03385 74.284 5.81179C73.9824 5.58972 73.5731 5.47869 73.056 5.47869C72.7047 5.47869 72.4081 5.52841 72.1661 5.62784C71.9242 5.72396 71.7385 5.85819 71.6093 6.03054C71.4833 6.20289 71.4204 6.39844 71.4204 6.61719C71.4137 6.79948 71.4519 6.95857 71.5347 7.09446C71.6209 7.23035 71.7385 7.34801 71.8877 7.44744C72.0368 7.54356 72.2092 7.62808 72.4047 7.70099C72.6003 7.7706 72.8091 7.83026 73.0312 7.87997L73.9459 8.09872C74.3901 8.19815 74.7977 8.33073 75.1689 8.49645C75.5402 8.66217 75.8617 8.866 76.1334 9.10795C76.4052 9.34991 76.6157 9.63494 76.7648 9.96307C76.9173 10.2912 76.9952 10.6674 76.9985 11.0916C76.9952 11.7147 76.8361 12.255 76.5212 12.7124C76.2097 13.1664 75.7589 13.5194 75.1689 13.7713C74.5823 14.0199 73.8747 14.1442 73.0461 14.1442C72.2241 14.1442 71.5082 14.0182 70.8983 13.7663C70.2918 13.5144 69.8179 13.1416 69.4765 12.6477C69.1384 12.1506 68.9611 11.5357 68.9445 10.8033H71.0276C71.0508 11.1446 71.1486 11.4297 71.3209 11.6584C71.4966 11.8838 71.7303 12.0545 72.0219 12.1705C72.3169 12.2831 72.65 12.3395 73.0212 12.3395C73.3858 12.3395 73.7023 12.2865 73.9708 12.1804C74.2426 12.0743 74.453 11.9268 74.6022 11.7379C74.7513 11.549 74.8259 11.3319 74.8259 11.0866C74.8259 10.858 74.758 10.6657 74.6221 10.5099C74.4895 10.3542 74.2939 10.2216 74.0354 10.1122C73.7802 10.0028 73.467 9.90341 73.0958 9.81392L71.9871 9.53551C71.1287 9.3267 70.4509 9.00024 69.9537 8.55611C69.4566 8.11198 69.2097 7.51373 69.213 6.76136C69.2097 6.14489 69.3737 5.6063 69.7052 5.1456C70.0399 4.6849 70.499 4.32528 71.0823 4.06676C71.6656 3.80824 72.3285 3.67898 73.0709 3.67898C73.8266 3.67898 74.4862 3.80824 75.0496 4.06676C75.6164 4.32528 76.0572 4.6849 76.3721 5.1456C76.6869 5.6063 76.8493 6.13991 76.8593 6.74645H74.7961Z"
+                            fill="white" />
+                    </svg>
+                </i></a>
+
+        </div>
+
+    </section>
+
+    <section id="services">
+        <h3 class="title-section" data-aos="zoom-in">Serviços elétricos profissionais <br>
+            para sua casa ou empresa</h3>
+        <div class="cards">
+            <div class="row">
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <h4 class="card-header">Instalação de sistemas de iluminação</h4>
+                    <p class="description">Nossa equipe de eletricistas pode instalar sistemas de iluminação
+                        personalizados em sua casa ou empresa, para criar um
+                        ambiente perfeito para suas necessidades.</p>
+
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <h4 class="card-header">Reparos elétricos residenciais</h4>
+                    <p class="description">Nossa equipe pode lidar com qualquer problema elétrico em sua casa, desde a
+                        substituição de um interruptor até a
+                        reparação de um curto-circuito.</p>
+
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <h4 class="card-header">Instalação de geradores</h4>
+                    <p class="description">Se você precisa de energia elétrica confiável e constante, mesmo em caso de
+                        falta de energia, nossos eletricistas podem
+                        instalar um gerador para garantir que você nunca fique sem energia.</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <h4 class="card-header">Manutenção preventiva</h4>
+                    <p class="description">Oferecemos serviços de manutenção preventiva para garantir que seus sistemas
+                        elétricos estejam sempre funcionando com
+                        eficiência e segurança.</p>
+
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <h4 class="card-header">Projetos elétricos</h4>
+                    <p class="description">Se você está construindo uma nova casa ou empresa, nossos eletricistas podem
+                        ajudá-lo a projetar um sistema elétrico
+                        personalizado que atenda às suas necessidades específicas.</p>
+
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <h4 class="card-header">Instalação de painéis solares</h4>
+                    <p class="description">Estamos comprometidos em ajudar nossos clientes a economizar energia e
+                        reduzir sua pegada de carbono. Por isso,
+                        oferecemos serviços de instalação de painéis solares para fornecer energia elétrica limpa e
+                        renovável.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h3 class="title-section" data-aos="zoom-in">Projetos elétricos personalizados para <br> transformar sua casa ou
+            empresa</h3>
+        <div class="colum">
+            <h4 class="sbtitle" data-aos="zoom-in">Conheça alguns dos projetos elétricos personalizados que <br>
+                realizamos para os nossos
+                clientes</h4>
+
+            <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="https://img.freepik.com/fotos-gratis/interior-plano-vazio-com-elementos-de-decoracao_1303-23910.jpg?w=1380&t=st=1680652197~exp=1680652797~hmac=40529849060d72d34269ff2ff663f85fff98859ab89cacbe5233500ce330d3c6"
+                    alt="">
+                <img src="https://img.freepik.com/fotos-gratis/bangcoc-tailandia-12-de-agosto-de-2016-beautiful-luxo-sala-de-estar_1203-2867.jpg?w=1380&t=st=1680652228~exp=1680652828~hmac=66a7aa5e44ac5e2d7216599b1362cec58b33847eee11fc99b6e66572f344463b"
+                    alt="">
+                <img src="https://img.freepik.com/fotos-gratis/borrao-abstrato-na-cafeteria_1339-2395.jpg?w=1380&t=st=1680652254~exp=1680652854~hmac=9bea31be6e4388db9f4fb625161c36abb8625a44d3a2e4f4077a38f859f3c6d4"
+                    alt="">
+            </div>
+            <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="https://img.freepik.com/fotos-gratis/apartamento-estudio-acolhedor-com-quarto-e-sala-de-estar_1262-12323.jpg?w=1380&t=st=1680652286~exp=1680652886~hmac=02c91feb30758e91d379a7a9a690b9ce4829a10698c2a03a4603432ac662a3e8"
+                    alt="">
+                <img src="https://img.freepik.com/fotos-gratis/interior-de-decoracao-de-bulbo-de-lampada-luz-bonita-da-sala_74190-7929.jpg?w=1380&t=st=1680652313~exp=1680652913~hmac=e61ba3e4fe3c24d39528ec39af63fa3b7e34008a622dcfe150dcb128c85f1011"
+                    alt="">
+                <img src="https://img.freepik.com/fotos-gratis/aconchegante-sala-de-estar-de-um-apartamento-moderno_181624-58445.jpg?w=1380&t=st=1680652328~exp=1680652928~hmac=40dc79b69527b49f580dc9b2faa05dac11ba6ff392a3a4e84185c3c7abeed26c"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h3 class="title-section" data-aos="zoom-in" data-aos="fade-up" data-aos-duration="2000">Conheça nossa história
+            e saiba por que
+            somos líderes <br> em serviços elétricos de
+            qualidade</h3>
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <p class="text-about">Bem-vindo ao Grupo Sky Tecno! Somos uma equipe de eletricistas dedicados a fornecer
+                serviços elétricos de alta qualidade
+                para nossos clientes. Com anos de experiência no ramo, nosso objetivo é garantir a segurança e a
+                eficiência dos sistemas
+                elétricos em residências, empresas e indústrias.
+                Nosso compromisso com a qualidade começa com nossa equipe de eletricistas altamente treinados e
+                qualificados, que são
+                especialistas em diagnóstico, reparo e manutenção de sistemas elétricos complexos. Além disso,
+                utilizamos apenas
+                equipamentos e materiais de alta qualidade em todos os nossos projetos. <br> <br>
+
+                Estamos comprometidos em oferecer um atendimento personalizado a cada cliente, desde a primeira consulta
+                até a conclusão
+                do projeto. Nosso objetivo é garantir que você esteja completamente satisfeito com nossos serviços
+                elétricos e que tenha
+                a tranquilidade de saber que sua casa ou empresa está em boas mãos. <br> <br>
+
+                O Grupo Sky Tecno é uma empresa confiável e líder em serviços elétricos de qualidade. Não importa qual
+                seja sua
+                necessidade elétrica, estamos prontos para ajudá-lo. Entre em contato conosco hoje mesmo para saber como
+                podemos ajudar
+                a garantir a segurança e a eficiência do seu sistema elétrico.</p>
+            <i class="logo-buy">
+                <svg viewBox="0 0 692 692" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M223.587 516.959C222.24 516.959 221.202 517.219 220.473 517.738C219.738 518.242 219.378 519.093 219.378 520.304C219.378 521.515 219.897 522.524 220.935 523.331C221.973 524.124 223.112 524.816 224.366 525.407C225.635 525.984 226.759 526.489 227.739 526.907C228.734 527.332 229.498 527.678 230.017 527.945C230.551 528.219 231.272 528.593 232.18 529.069C233.102 529.552 233.809 530.013 234.313 530.453C234.832 530.878 235.416 531.426 236.072 532.097C236.743 532.753 237.24 533.423 237.572 534.115C238.437 535.867 238.869 537.734 238.869 539.709C238.869 543.652 237.456 546.845 234.631 549.281C231.805 551.703 228.122 552.914 223.587 552.914C221.281 552.914 218.888 552.604 216.408 551.992C213.928 551.357 212.011 550.716 210.67 550.06L208.681 549.166C208.753 548.842 208.89 548.409 209.084 547.868C209.329 547.14 209.985 545.036 211.045 541.554C216.04 543.536 220.625 544.524 224.798 544.524C225.966 544.524 226.975 544.264 227.826 543.745C228.691 543.212 229.123 541.986 229.123 540.083C229.123 539.204 228.871 538.526 228.374 538.065C227.891 537.589 227.487 537.222 227.163 536.969C226.853 536.703 226.392 536.407 225.779 536.076C225.159 535.751 224.633 535.485 224.193 535.268C223.249 534.829 221.548 534.028 219.089 532.875C216.646 531.722 214.88 530.698 213.784 529.79C210.973 527.599 209.574 524.643 209.574 520.909C209.574 517.183 210.879 514.191 213.496 511.942C216.127 509.693 219.854 508.569 224.683 508.569C226.428 508.569 228.352 508.734 230.45 509.059C232.562 509.369 234.861 509.866 237.341 510.558L235.813 518.343C230.947 517.42 226.874 516.959 223.587 516.959Z"
+                        fill="white" />
+                    <path
+                        d="M271.435 552.136L256.153 529.675L269.906 509.347H281.526L266.187 529.358V529.732L283.285 552.136H271.435ZM256.038 509.347V552.136H246.407L246.609 530.338L246.407 509.347H256.038Z"
+                        fill="white" />
+                    <path
+                        d="M294.498 552.136L294.7 536.739L281.552 509.347H291.701L299.198 528.954H299.544L307.04 509.347H317.219L304.071 536.739L304.186 552.136H294.498Z"
+                        fill="white" />
+                    <path
+                        d="M316.11 509.347H349.413V517.622L337.245 517.449L337.418 552.136H327.874L328.047 517.449L316.11 517.622V509.347Z"
+                        fill="white" />
+                    <path
+                        d="M353.548 552.136V509.347H379.238V517.507L363.063 517.334L362.803 526.445H377.71V534.49H362.803L363.063 544.091L379.238 543.976V552.136H353.548Z"
+                        fill="white" />
+                    <path
+                        d="M414.799 517.882C409.761 517.269 405.897 516.959 403.208 516.959C400.534 516.959 398.739 517.327 397.817 518.055C395.986 519.518 395.077 523.937 395.077 531.318C395.077 534.684 395.366 537.445 395.942 539.593C396.533 541.749 397.269 543.154 398.134 543.803C399.013 544.459 400.311 544.783 402.026 544.783C403.756 544.783 405.645 544.517 407.706 543.976C409.782 543.421 412.147 542.614 414.799 541.554L417.539 548.733C417.034 549.065 416.335 549.454 415.434 549.916C414.547 550.377 412.788 550.997 410.157 551.761C407.519 552.525 404.924 552.914 402.372 552.914C396.93 552.914 392.691 551.177 389.657 547.695C386.615 544.199 385.101 538.685 385.101 531.145C385.101 523.994 386.233 518.66 388.503 515.143C389.556 513.47 390.882 512.144 392.482 511.164C394.075 510.169 395.741 509.484 397.471 509.116C399.201 508.756 401.017 508.569 402.92 508.569C404.823 508.569 407.058 508.727 409.638 509.03C412.212 509.318 414.28 509.664 415.837 510.068L414.799 517.882Z"
+                        fill="white" />
+                    <path
+                        d="M424.711 509.347H436.648L449.854 539.709H450.229L449.479 509.347H458.302V552.136H446.394L433.188 521.774H432.814L433.534 552.136H424.711V509.347Z"
+                        fill="white" />
+                    <path
+                        d="M491.625 551.963C489.585 552.597 487.228 552.914 484.561 552.914C481.886 552.914 479.522 552.597 477.468 551.963C475.406 551.314 473.517 550.197 471.787 548.618C468.133 545.374 466.309 539.384 466.309 530.655C466.309 520.837 468.818 514.335 473.835 511.164C476.559 509.434 480.135 508.569 484.561 508.569C491.495 508.569 496.411 510.76 499.294 515.143C501.637 518.704 502.812 523.872 502.812 530.655C502.812 539.384 500.981 545.374 497.334 548.618C495.582 550.197 493.679 551.314 491.625 551.963ZM479.717 517.939C478.599 518.574 477.734 519.9 477.122 521.918C476.523 523.922 476.228 526.863 476.228 530.741C476.228 534.627 476.53 537.589 477.15 539.622C477.785 541.64 478.657 542.967 479.774 543.601C480.884 544.221 482.485 544.524 484.561 544.524C486.637 544.524 488.222 544.199 489.318 543.543C491.697 542.181 492.893 537.921 492.893 530.77C492.893 523.548 491.74 519.266 489.433 517.939C488.294 517.291 486.673 516.959 484.561 516.959C482.441 516.959 480.827 517.291 479.717 517.939Z"
+                        fill="white" />
+                    <mask id="mask0_5_3161" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="145" y="101"
+                        width="381" height="389">
+                        <path d="M145.781 101.493H525.92V489.013H145.781V101.493Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_5_3161)">
+                        <mask id="mask1_5_3161" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-12" y="-9"
+                            width="620" height="632">
+                            <path
+                                d="M391.658 -8.15259L607.893 417.557L204.392 622.512L-11.8359 196.802L391.658 -8.15259Z"
+                                fill="white" />
+                        </mask>
+                        <g mask="url(#mask1_5_3161)">
+                            <mask id="mask2_5_3161" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-12"
+                                y="-9" width="620" height="632">
+                                <path
+                                    d="M391.658 -8.15259L607.893 417.557L204.392 622.512L-11.8359 196.802L391.658 -8.15259Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask2_5_3161)">
+                                <path
+                                    d="M525.12 323.827C513.241 439.485 394.959 512.404 285.234 479.138C199.851 455.523 139.647 368.043 147.627 279.885C160.299 109.408 380.146 35.6741 485.049 175.609C397.1 75.8822 226.104 95.8781 172.553 220.647C94.4004 405.815 321.665 562.805 467.9 425.039C497.029 398.412 517.032 362.428 525.12 323.827Z"
+                                    fill="white" />
+                            </g>
+                        </g>
+                    </g>
+                    <path
+                        d="M342.82 211.814C332.858 211.814 325.174 213.703 319.753 217.466C314.332 221.236 311.622 227.637 311.622 236.669C311.622 245.708 315.457 253.161 323.126 259.043C330.811 264.911 339.331 270.029 348.673 274.412C358.015 278.78 366.376 282.543 373.758 285.714C381.139 288.872 386.776 291.423 390.683 293.384C394.604 295.345 399.953 298.134 406.743 301.746C413.526 305.364 418.795 308.752 422.544 311.924C426.307 315.081 430.682 319.147 435.663 324.12C440.637 329.08 444.327 334.118 446.735 339.229C453.057 352.19 456.221 366.044 456.221 380.807C456.221 410.029 445.755 433.68 424.822 451.765C403.889 469.837 376.555 478.869 342.82 478.869C325.635 478.869 307.852 476.533 289.478 471.862C271.097 467.191 256.94 462.448 247.006 457.619L232.1 450.843C232.691 448.442 233.75 445.278 235.271 441.357C237.073 435.936 241.889 420.272 249.717 394.358C286.775 409.121 320.82 416.502 351.844 416.502C360.567 416.502 368.092 414.556 374.421 410.649C380.764 406.728 383.936 397.689 383.936 383.517C383.936 376.885 382.119 371.839 378.486 368.379C374.868 364.919 371.862 362.209 369.462 360.248C367.054 358.288 363.594 356.111 359.082 353.703C354.562 351.281 350.641 349.321 347.318 347.821C340.398 344.52 327.826 338.58 309.604 330.002C291.381 321.41 278.204 313.798 270.073 307.166C249.27 290.904 238.875 268.919 238.875 241.196C238.875 213.48 248.592 191.271 268.026 174.562C287.46 157.838 315.096 149.477 350.951 149.477C363.882 149.477 378.184 150.681 393.855 153.081C409.518 155.489 426.537 159.251 444.918 164.384L433.616 222.223C397.473 215.289 367.213 211.814 342.82 211.814Z"
+                        fill="white" />
+                    <mask id="mask3_5_3161" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="428" y="125"
+                        width="156" height="138">
+                        <path d="M428.117 125.483H583.125V262.037H428.117V125.483Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask3_5_3161)">
+                        <mask id="mask4_5_3161" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="427" y="123"
+                            width="159" height="142">
+                            <path d="M582.469 123.421L585.021 261.8L430.042 264.661L427.49 126.283L582.469 123.421Z"
+                                fill="white" />
+                        </mask>
+                        <g mask="url(#mask4_5_3161)">
+                            <mask id="mask5_5_3161" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="427"
+                                y="123" width="159" height="142">
+                                <path d="M582.469 123.421L585.021 261.8L430.042 264.661L427.49 126.283L582.469 123.421Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask5_5_3161)">
+                                <path
+                                    d="M503.61 243.361L511.186 234.091L543.645 260.639C545.743 262.355 548.835 262.045 550.558 259.94C552.274 257.842 551.964 254.743 549.859 253.027L517.407 226.486L542.47 195.807L574.929 222.355C577.027 224.071 580.119 223.761 581.842 221.663C583.558 219.559 583.248 216.466 581.143 214.751L548.691 188.202L556.267 178.94C558.848 175.775 558.386 171.111 555.222 168.531C552.461 166.267 548.554 166.34 545.887 168.502L510.278 139.38C499.53 130.586 483.693 132.172 474.899 142.927L469.969 148.967C464.808 145.99 456.518 140.721 446.7 132.691L438.526 126.002L433.444 132.223L428.362 138.436L436.544 145.125C446.354 153.156 453.159 160.234 457.109 164.703L452.171 170.744C443.384 181.499 444.97 197.343 455.725 206.137L491.334 235.258C489.741 238.3 490.448 242.15 493.208 244.406C496.366 246.994 501.03 246.518 503.61 243.361Z"
+                                    fill="white" />
+                            </g>
+                        </g>
+                    </g>
+                    <path
+                        d="M131.57 479.829C130.475 480.831 129.927 483.52 129.927 487.903C129.927 492.271 130.504 495.025 131.657 496.178C132.327 496.812 133.43 497.129 134.973 497.129C136.508 497.129 137.64 497.043 138.375 496.87V490.959L134.396 490.7V486.259H144.372V500.445C143.255 500.928 141.821 501.354 140.076 501.714C138.346 502.074 136.76 502.262 135.319 502.262C133.891 502.262 132.637 502.146 131.542 501.916C130.46 501.707 129.408 501.281 128.37 500.647C127.332 499.998 126.467 499.162 125.775 498.139C124.254 495.832 123.497 492.415 123.497 487.874C123.497 482.187 124.65 478.345 126.957 476.341C128.125 475.324 129.408 474.632 130.792 474.265C132.19 473.883 134.108 473.688 136.53 473.688C138.966 473.688 141.576 474.027 144.344 474.697L143.623 479.685C140.105 479.303 137.351 479.109 135.376 479.109C133.416 479.109 132.147 479.354 131.57 479.829Z"
+                        fill="white" />
+                    <path
+                        d="M171.183 482.857C171.183 487.009 169.316 489.748 165.589 491.074V491.334L172.279 501.743H165.157L160.082 491.939L156.564 491.882V501.743H150.423L150.567 488.97L150.423 474.236C156.629 473.875 160.096 473.688 160.832 473.688C167.73 473.688 171.183 476.744 171.183 482.857ZM156.564 486.778C158.352 486.951 159.916 487.038 161.264 487.038C162.605 487.038 163.542 486.721 164.061 486.086C164.58 485.452 164.84 484.234 164.84 482.424C164.84 480.601 164.508 479.476 163.859 479.051C163.376 478.748 162.331 478.59 160.716 478.59C159.116 478.59 157.732 478.669 156.564 478.82V486.778Z"
+                        fill="white" />
+                    <path
+                        d="M192.507 474.207H198.648V489.316C198.648 494.181 197.791 497.555 196.082 499.436C194.367 501.325 191.728 502.262 188.153 502.262C184.592 502.262 181.954 501.339 180.224 499.494C178.508 497.634 177.658 494.347 177.658 489.633V474.207H183.799V488.624C183.799 491.067 183.929 492.884 184.203 494.073C184.491 495.248 184.909 496.019 185.472 496.38C186.048 496.747 186.942 496.92 188.153 496.899C189.378 496.884 190.272 496.697 190.835 496.351C191.39 496.005 191.8 495.255 192.074 494.102C192.363 492.949 192.507 491.125 192.507 488.624V474.207Z"
+                        fill="white" />
+                    <path
+                        d="M205.167 474.236C209.376 473.875 212.923 473.688 215.806 473.688C218.704 473.688 220.924 474.51 222.467 476.139C224.024 477.775 224.802 480.19 224.802 483.376C224.802 487.24 223.764 489.943 221.688 491.478C219.915 492.79 217.687 493.439 214.999 493.439L211.308 493.323V501.743H205.167L205.311 488.883L205.167 474.236ZM217.594 479.224C217.226 478.864 216.361 478.676 214.999 478.676C213.629 478.676 212.404 478.734 211.308 478.849V487.989C212.404 488.184 213.615 488.278 214.941 488.278C216.282 488.278 217.197 488.047 217.68 487.586C218.178 487.124 218.43 485.755 218.43 483.462C218.43 481.156 218.149 479.743 217.594 479.224Z"
+                        fill="white" />
+                    <path
+                        d="M244.524 501.627C243.197 502.046 241.669 502.262 239.939 502.262C238.224 502.262 236.71 502.046 235.384 501.627C234.072 501.209 232.853 500.489 231.722 499.465C229.372 497.375 228.204 493.518 228.204 487.903C228.204 481.581 229.819 477.4 233.048 475.36C234.814 474.25 237.121 473.688 239.968 473.688C244.423 473.688 247.587 475.101 249.454 477.926C250.954 480.219 251.703 483.542 251.703 487.903C251.703 493.518 250.528 497.375 248.186 499.465C247.068 500.489 245.85 501.209 244.524 501.627ZM236.825 479.743C236.112 480.147 235.557 481.004 235.153 482.309C234.764 483.599 234.576 485.495 234.576 487.989C234.576 490.469 234.778 492.365 235.182 493.669C235.6 494.981 236.169 495.832 236.883 496.236C237.589 496.639 238.613 496.841 239.939 496.841C241.28 496.841 242.311 496.632 243.024 496.207C244.56 495.327 245.331 492.588 245.331 487.989C245.331 483.34 244.581 480.579 243.082 479.714C242.347 479.31 241.302 479.109 239.939 479.109C238.591 479.109 237.553 479.325 236.825 479.743Z"
+                        fill="white" />
+                </svg>
+
+            </i>
+        </div>
+    </section>
+    <section id="buy">
+        <div class="container-2">
+            <h4 class="buy-title" data-aos="zoom-in">
+                Está precisando de serviços elétricos profissionais? Entre em contato conosco agora mesmo pelo WhatsApp
+                e
+                solicite seu
+                orçamento personalizado. Nossa equipe está pronta para atender você!
+            </h4>
+            <a href="#" class="btn-buy" data-aos="zoom-in">
+                <img src="/IMAGES/whatsapp.svg" class="whatsapp-icon">
+                SOLICITAR ORÇAMENTO</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-1">
+            <div class="l1">
+                <i class="logo-footer">
+                    <svg width="237" height="237" viewBox="0 0 237 237" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M76.5756 177.051C76.1139 177.051 75.7584 177.14 75.5091 177.318C75.2573 177.491 75.1338 177.782 75.1338 178.197C75.1338 178.611 75.3116 178.957 75.6671 179.233C76.0226 179.505 76.4127 179.742 76.8422 179.944C77.2767 180.142 77.6618 180.315 77.9976 180.458C78.3383 180.604 78.6 180.722 78.7777 180.813C78.9604 180.907 79.2073 181.036 79.5183 181.199C79.8343 181.364 80.0763 181.522 80.2491 181.673C80.4268 181.818 80.6268 182.006 80.8515 182.235C81.0811 182.46 81.2514 182.69 81.365 182.927C81.6612 183.527 81.8093 184.166 81.8093 184.842C81.8093 186.193 81.3255 187.287 80.3577 188.121C79.39 188.95 78.1284 189.365 76.5756 189.365C75.7856 189.365 74.966 189.259 74.1167 189.049C73.2675 188.832 72.6108 188.612 72.1516 188.388L71.4702 188.081C71.4949 187.97 71.5418 187.822 71.6085 187.637C71.6924 187.388 71.9171 186.667 72.28 185.474C73.9908 186.153 75.5609 186.492 76.9903 186.492C77.3903 186.492 77.7359 186.403 78.0272 186.225C78.3235 186.042 78.4716 185.623 78.4716 184.971C78.4716 184.67 78.3852 184.438 78.2148 184.28C78.0494 184.117 77.9112 183.991 77.8001 183.904C77.6939 183.813 77.5359 183.712 77.3261 183.598C77.1138 183.487 76.9336 183.396 76.783 183.322C76.4596 183.171 75.8769 182.897 75.0351 182.502C74.1982 182.107 73.5933 181.757 73.2181 181.445C72.2553 180.695 71.7763 179.683 71.7763 178.404C71.7763 177.128 72.2232 176.103 73.1193 175.333C74.0204 174.563 75.2968 174.177 76.9508 174.177C77.5483 174.177 78.2074 174.234 78.9258 174.345C79.6492 174.452 80.4367 174.622 81.286 174.859L80.7626 177.525C79.0962 177.209 77.7013 177.051 76.5756 177.051Z"
+                            fill="white" />
+                        <path
+                            d="M92.9626 189.099L87.7289 181.406L92.4392 174.444H96.4189L91.1654 181.297V181.426L97.0212 189.099H92.9626ZM87.6894 174.444V189.099H84.3911L84.4602 181.633L84.3911 174.444H87.6894Z"
+                            fill="white" />
+                        <path
+                            d="M100.862 189.099L100.931 183.825L96.4277 174.444H99.9037L102.471 181.159H102.59L105.157 174.444H108.643L104.14 183.825L104.18 189.099H100.862Z"
+                            fill="white" />
+                        <path
+                            d="M108.263 174.444H119.669V177.278L115.502 177.219L115.561 189.099H112.292L112.351 177.219L108.263 177.278V174.444Z"
+                            fill="white" />
+                        <path
+                            d="M121.085 189.099V174.444H129.884V177.239L124.344 177.179L124.255 180.3H129.36V183.055H124.255L124.344 186.343L129.884 186.304V189.099H121.085Z"
+                            fill="white" />
+                        <path
+                            d="M142.063 177.367C140.337 177.157 139.014 177.051 138.093 177.051C137.177 177.051 136.562 177.177 136.246 177.426C135.619 177.928 135.308 179.441 135.308 181.969C135.308 183.122 135.407 184.067 135.605 184.803C135.807 185.541 136.059 186.023 136.355 186.245C136.656 186.469 137.101 186.58 137.688 186.58C138.281 186.58 138.928 186.489 139.634 186.304C140.345 186.114 141.154 185.837 142.063 185.474L143.001 187.933C142.828 188.047 142.589 188.18 142.28 188.338C141.976 188.496 141.374 188.709 140.473 188.97C139.569 189.232 138.681 189.365 137.807 189.365C135.943 189.365 134.491 188.77 133.452 187.578C132.41 186.381 131.892 184.492 131.892 181.91C131.892 179.461 132.279 177.634 133.057 176.429C133.417 175.856 133.872 175.402 134.42 175.066C134.965 174.726 135.535 174.491 136.128 174.365C136.72 174.242 137.343 174.177 137.994 174.177C138.646 174.177 139.411 174.232 140.295 174.335C141.177 174.434 141.885 174.553 142.418 174.691L142.063 177.367Z"
+                            fill="white" />
+                        <path
+                            d="M145.458 174.444H149.546L154.069 184.842H154.197L153.94 174.444H156.962V189.099H152.884L148.361 178.7H148.232L148.479 189.099H145.458V174.444Z"
+                            fill="white" />
+                        <path
+                            d="M168.374 189.039C167.676 189.257 166.868 189.365 165.955 189.365C165.039 189.365 164.229 189.257 163.526 189.039C162.82 188.817 162.173 188.435 161.58 187.894C160.329 186.783 159.704 184.731 159.704 181.742C159.704 178.379 160.563 176.152 162.281 175.066C163.215 174.474 164.439 174.177 165.955 174.177C168.33 174.177 170.014 174.928 171.001 176.429C171.803 177.649 172.206 179.419 172.206 181.742C172.206 184.731 171.579 186.783 170.33 187.894C169.73 188.435 169.078 188.817 168.374 189.039ZM164.296 177.387C163.913 177.604 163.617 178.058 163.407 178.75C163.202 179.436 163.101 180.443 163.101 181.771C163.101 183.102 163.205 184.117 163.417 184.813C163.634 185.504 163.933 185.958 164.316 186.176C164.696 186.388 165.244 186.492 165.955 186.492C166.666 186.492 167.209 186.381 167.584 186.156C168.399 185.689 168.809 184.23 168.809 181.781C168.809 179.308 168.414 177.841 167.624 177.387C167.234 177.165 166.678 177.051 165.955 177.051C165.229 177.051 164.676 177.165 164.296 177.387Z"
+                            fill="white" />
+                        <mask id="mask0_5_3056" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="49" y="34"
+                            width="132" height="134">
+                            <path d="M49.928 34.76H180.12V167.48H49.928V34.76Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_5_3056)">
+                            <mask id="mask1_5_3056" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-5" y="-3"
+                                width="214" height="217">
+                                <path
+                                    d="M134.137 -2.79224L208.195 143.007L70.0014 213.201L-4.05371 67.4017L134.137 -2.79224Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask1_5_3056)">
+                                <mask id="mask2_5_3056" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-5"
+                                    y="-3" width="214" height="217">
+                                    <path
+                                        d="M134.137 -2.79224L208.195 143.007L70.0014 213.201L-4.05371 67.4017L134.137 -2.79224Z"
+                                        fill="white" />
+                                </mask>
+                                <g mask="url(#mask2_5_3056)">
+                                    <path
+                                        d="M179.846 110.906C175.778 150.517 135.268 175.491 97.6885 164.098C68.4461 156.01 47.8271 126.049 50.5601 95.8565C54.9001 37.4706 130.195 12.2177 166.122 60.1436C136.001 25.9884 77.4373 32.8367 59.097 75.5683C32.3308 138.986 110.166 192.752 160.249 145.57C170.225 136.45 177.076 124.126 179.846 110.906Z"
+                                        fill="white" />
+                                </g>
+                            </g>
+                        </g>
+                        <path
+                            d="M117.411 72.5434C113.999 72.5434 111.367 73.1902 109.511 74.4789C107.654 75.77 106.726 77.9623 106.726 81.0556C106.726 84.1514 108.039 86.7041 110.666 88.7186C113.298 90.7282 116.216 92.481 119.415 93.982C122.615 95.478 125.479 96.7667 128.007 97.853C130.535 98.9343 132.465 99.8082 133.803 100.48C135.146 101.151 136.978 102.107 139.304 103.343C141.627 104.583 143.431 105.743 144.715 106.829C146.004 107.911 147.502 109.303 149.208 111.006C150.912 112.705 152.176 114.431 153 116.181C155.165 120.62 156.249 125.365 156.249 130.421C156.249 140.429 152.664 148.529 145.495 154.723C138.326 160.912 128.964 164.006 117.411 164.006C111.525 164.006 105.435 163.206 99.142 161.606C92.8467 160.006 87.998 158.382 84.5961 156.728L79.4907 154.407C79.6932 153.585 80.0561 152.501 80.577 151.158C81.1942 149.302 82.8433 143.937 85.5243 135.062C98.2162 140.118 109.876 142.646 120.502 142.646C123.489 142.646 126.066 141.979 128.234 140.641C130.406 139.298 131.492 136.203 131.492 131.349C131.492 129.078 130.87 127.35 129.626 126.165C128.387 124.98 127.357 124.051 126.535 123.38C125.711 122.708 124.526 121.963 122.98 121.138C121.432 120.309 120.089 119.637 118.951 119.124C116.581 117.993 112.276 115.959 106.035 113.021C99.7937 110.078 95.2808 107.471 92.4961 105.2C85.3713 99.6305 81.8113 92.1008 81.8113 82.606C81.8113 73.1136 85.1392 65.5074 91.795 59.7849C98.4507 54.0574 107.916 51.1936 120.195 51.1936C124.624 51.1936 129.522 51.6059 134.889 52.428C140.254 53.2525 146.083 54.5412 152.378 56.299L148.507 76.1082C136.129 73.7333 125.765 72.5434 117.411 72.5434Z"
+                            fill="white" />
+                        <mask id="mask3_5_3056" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="146" y="42"
+                            width="54" height="48">
+                            <path d="M146.624 42.9761H199.712V89.7441H146.624V42.9761Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask3_5_3056)">
+                            <mask id="mask4_5_3056" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="146"
+                                y="42" width="55" height="49">
+                                <path d="M199.487 42.27L200.361 89.6626L147.283 90.6427L146.409 43.2501L199.487 42.27Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask4_5_3056)">
+                                <mask id="mask5_5_3056" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="146"
+                                    y="42" width="55" height="49">
+                                    <path
+                                        d="M199.487 42.27L200.361 89.6626L147.283 90.6427L146.409 43.2501L199.487 42.27Z"
+                                        fill="white" />
+                                </mask>
+                                <g mask="url(#mask5_5_3056)">
+                                    <path
+                                        d="M172.479 83.3475L175.074 80.1727L186.191 89.2651C186.909 89.8527 187.968 89.7465 188.558 89.0257C189.146 88.3072 189.04 87.2457 188.319 86.6581L177.204 77.5682L185.788 67.0612L196.905 76.1536C197.624 76.7411 198.683 76.635 199.273 75.9166C199.86 75.1957 199.754 74.1366 199.033 73.5491L187.919 64.4567L190.514 61.2843C191.397 60.2005 191.239 58.6032 190.156 57.7194C189.21 56.9442 187.872 56.9689 186.959 57.7096L174.763 47.7358C171.082 44.7239 165.658 45.2671 162.646 48.9504L160.958 51.0192C159.19 49.9997 156.351 48.195 152.989 45.4448L150.189 43.1538L148.448 45.2843L146.708 47.4124L149.51 49.7034C152.87 52.4536 155.201 54.8779 156.553 56.4085L154.862 58.4773C151.853 62.1607 152.396 67.587 156.079 70.5989L168.275 80.5727C167.729 81.6145 167.971 82.9328 168.917 83.7055C169.998 84.5918 171.595 84.4288 172.479 83.3475Z"
+                                        fill="white" />
+                                </g>
+                            </g>
+                        </g>
+                        <path
+                            d="M45.0609 164.335C44.6856 164.678 44.498 165.599 44.498 167.1C44.498 168.596 44.6955 169.539 45.0905 169.934C45.3201 170.151 45.6978 170.26 46.2261 170.26C46.752 170.26 47.1396 170.23 47.3914 170.171V168.146L46.0286 168.057V166.537H49.4454V171.395C49.0627 171.561 48.5715 171.706 47.974 171.83C47.3815 171.953 46.8384 172.017 46.3446 172.017C45.8558 172.017 45.4263 171.978 45.051 171.899C44.6807 171.827 44.3203 171.682 43.9648 171.464C43.6093 171.242 43.313 170.956 43.076 170.605C42.5551 169.815 42.2959 168.645 42.2959 167.09C42.2959 165.142 42.6909 163.826 43.4809 163.14C43.8808 162.792 44.3203 162.555 44.7943 162.429C45.2732 162.298 45.9299 162.231 46.7594 162.231C47.5938 162.231 48.4875 162.347 49.4355 162.577L49.1886 164.285C47.9839 164.154 47.0408 164.088 46.3644 164.088C45.6929 164.088 45.2584 164.172 45.0609 164.335Z"
+                            fill="white" />
+                        <path
+                            d="M58.6276 165.371C58.6276 166.793 57.9882 167.732 56.7118 168.186V168.275L59.0028 171.84H56.5637L54.8257 168.482L53.621 168.462V171.84H51.5176L51.567 167.465L51.5176 162.419C53.6432 162.295 54.8306 162.231 55.0825 162.231C57.445 162.231 58.6276 163.278 58.6276 165.371ZM53.621 166.714C54.2332 166.774 54.7689 166.803 55.2306 166.803C55.6898 166.803 56.0107 166.695 56.1885 166.477C56.3662 166.26 56.4551 165.843 56.4551 165.223C56.4551 164.599 56.3415 164.214 56.1193 164.068C55.9539 163.964 55.596 163.91 55.043 163.91C54.4949 163.91 54.0209 163.937 53.621 163.989V166.714Z"
+                            fill="white" />
+                        <path
+                            d="M65.9308 162.409H68.0342V167.583C68.0342 169.25 67.7404 170.405 67.1553 171.05C66.5678 171.696 65.6642 172.017 64.4397 172.017C63.2202 172.017 62.3166 171.701 61.7241 171.069C61.1365 170.432 60.8452 169.307 60.8452 167.692V162.409H62.9486V167.346C62.9486 168.183 62.993 168.805 63.0868 169.213C63.1856 169.615 63.3288 169.879 63.5213 170.003C63.7188 170.129 64.025 170.188 64.4397 170.181C64.8594 170.176 65.1655 170.111 65.3581 169.993C65.5482 169.874 65.6889 169.618 65.7827 169.223C65.8815 168.828 65.9308 168.203 65.9308 167.346V162.409Z"
+                            fill="white" />
+                        <path
+                            d="M70.2666 162.419C71.7084 162.295 72.923 162.231 73.9105 162.231C74.9029 162.231 75.6633 162.513 76.1916 163.071C76.7249 163.631 76.9915 164.458 76.9915 165.549C76.9915 166.872 76.636 167.798 75.925 168.324C75.3177 168.773 74.5548 168.996 73.634 168.996L72.37 168.956V171.84H70.2666L70.316 167.435L70.2666 162.419ZM74.5227 164.127C74.3968 164.004 74.1006 163.94 73.634 163.94C73.1649 163.94 72.7452 163.959 72.37 163.999V167.129C72.7452 167.196 73.16 167.228 73.6142 167.228C74.0734 167.228 74.3869 167.149 74.5524 166.991C74.7227 166.833 74.8091 166.364 74.8091 165.579C74.8091 164.789 74.7128 164.305 74.5227 164.127Z"
+                            fill="white" />
+                        <path
+                            d="M83.746 171.8C83.2917 171.943 82.7684 172.017 82.1759 172.017C81.5883 172.017 81.0699 171.943 80.6156 171.8C80.1663 171.657 79.7491 171.41 79.3615 171.059C78.5567 170.344 78.1567 169.023 78.1567 167.1C78.1567 164.934 78.7097 163.503 79.8157 162.804C80.4206 162.424 81.2106 162.231 82.1857 162.231C83.7114 162.231 84.7952 162.715 85.4346 163.683C85.9481 164.468 86.2049 165.606 86.2049 167.1C86.2049 169.023 85.8025 170.344 85.0001 171.059C84.6175 171.41 84.2002 171.657 83.746 171.8ZM81.1094 164.305C80.865 164.443 80.6749 164.737 80.5366 165.184C80.4033 165.626 80.3391 166.275 80.3391 167.129C80.3391 167.978 80.4082 168.628 80.5465 169.075C80.6897 169.524 80.8847 169.815 81.1291 169.953C81.3711 170.092 81.7216 170.161 82.1759 170.161C82.6351 170.161 82.9881 170.089 83.2325 169.944C83.7583 169.642 84.0225 168.704 84.0225 167.129C84.0225 165.537 83.7657 164.591 83.2522 164.295C83.0004 164.157 82.6425 164.088 82.1759 164.088C81.7142 164.088 81.3587 164.162 81.1094 164.305Z"
+                            fill="white" />
+                    </svg>
+
+                </i>
+                <p class="slogan">Grupo Sky Tecno - Soluções elétricas inteligentes para você.</p>
+            </div>
+
+            <div class="l2">
+                <p>ENDEREÇO:</p>
+                <address>RUA DE EXEMPLO,309 - BAIRRO DE EXEMPLO</address>
+                <p>CONTATO:</p>
+                <p>TEL: (11) 9XXXX-XXXX</p>
+                <p>EMAIL: exemple@skytecno.com.br</p>
+                <p>CNPJ: XXXXXXXXXXXXXXXXXXXX</p>
+            </div>
+            <div class="l3">
+                <ul class="menu-footer">
+                    <li class="item-menu"><a href="index.html">INÍCIO</a></li>
+                    <li class="item-menu"><a href="#services">SERVIÇOS</a></li>
+                    <li class="item-menu"><a href="#projects">PROJETOS</a></li>
+                    <li class="item-menu"><a href="#about">SOBRE</a></li>
+            </div>
+            <div class="l4">
+                <a href="#top" class="page-up">
+                    <img src="/IMAGES/page-up.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 Grupo Sky Tecno. Todos os direitos reservados. Desenvolvido com amor por <a src="#"
+                    style="font-weight: bold;">Code Lima</a></p>&#x2764;
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/JS/script.js"></script>
+
+    <!--width="54" height="56"-->
+</body>
+
+</html>
